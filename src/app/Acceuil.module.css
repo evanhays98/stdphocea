@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 250px);
+    padding: 50px;
+    margin: 0 auto;
+    gap: 16px;
+    max-width: 1600px;
+}
+
+.title {
+    color: rgb(var(--blue-3));
+    width: auto;
+    text-align: left;
+}
+
+.open {
+    color: rgb(var(--blue-3));
+    width: auto;
+    text-align: left;
+}
+
+.titleContainer {
+    max-width: 50%;
+}
+
+.doctorCardsContainer {
+    display: flex;
+    gap: 80px;
+    padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 1378px) {
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .title, .open {
+        text-align: center;
+        padding: 0 30px 32px;
+    }
+
+    .titleContainer {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    .doctorCardsContainer {
+        gap: 16px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .open {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .doctorCardsContainer {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 24px 8px;
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    }
+}

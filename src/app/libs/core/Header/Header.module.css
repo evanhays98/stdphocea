@@ -1,0 +1,171 @@
+.container {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.mainContainer {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgb(var(--green-0));
+    width: 100%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 4px 16px 0 rgba(var(--black), 0.07);
+}
+
+.dropDownContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.logoContainer {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.name {
+    color: rgb(var(--green-5));
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.closeMenuButtonContainer {
+    display: none;
+}
+
+.meetingMenu {
+    display: none;
+}
+
+.menuButton {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .dropDownContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .meeting {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .closeMenuButtonContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        padding: 0 16px;
+    }
+
+    .menuContainer {
+        z-index: 100;
+        transform: translateX(400px);
+        position: fixed;
+        width: 95%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        max-width: 400px;
+        border-bottom-left-radius: 16px;
+        border-top-left-radius: 16px;
+        background: rgba(var(--green-5), 0.997);
+        display: flex;
+        align-items: flex-start;
+        padding: 32px 16px;
+        overflow-y: scroll;
+    }
+
+    .menuContainer.openMenu {
+        transform: translateX(0px);
+        animation: openMenu 0.3s ease-in-out;
+    }
+
+    .menuContainer.closeMenu {
+        transform: translateX(400px);
+        animation: closeMenu 0.3s ease-in-out;
+    }
+
+    .separator {
+        display: block;
+        border-radius: 2px;
+        width: 90%;
+        height: 1px;
+        margin: 0 auto;
+        background: rgb(var(--green-2));
+    }
+
+    .meetingMenu {
+        display: block;
+        padding-bottom: 16px;
+    }
+
+    .logoContainer {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+@keyframes openMenu {
+    0% {
+        transform: translateX(400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes closeMenu {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(400px);
+    }
+}

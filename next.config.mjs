@@ -21,6 +21,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
         unoptimized: true,
+        basePath: 'https://evanhays98.github.io/stdphocea',
     }
 }
 

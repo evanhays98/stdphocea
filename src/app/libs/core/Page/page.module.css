@@ -1,5 +1,5 @@
 .container {
-    background: rgba(var(--blue-1), 1);
+    background: #113242;
     width: 100%;
     min-height: 100vh;
     position: absolute;

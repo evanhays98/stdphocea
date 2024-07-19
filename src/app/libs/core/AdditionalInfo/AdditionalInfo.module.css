@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    max-width: 1900px;
+    background: rgb(var(--blue-0));
+    position: relative;
+    padding-bottom: 48px;
+    padding-top: 48px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 32px 32px 64px;
+}
+
+.listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    gap: 24px;
+    padding: 48px 0;
+}
+
+.customP {
+    padding-bottom: 8px;
+}
+
+.customLI {
+    padding-left: 32px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        padding: 8px;
+    }
+    .listContainer {
+        padding: 16px;
+    }
+}

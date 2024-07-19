@@ -86,7 +86,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(var(--white));
     font-weight: 800;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.5;
 }
 
@@ -94,7 +94,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(var(--black));
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -102,7 +102,7 @@ h4 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(var(--black));
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -118,7 +118,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     color: rgb(var(--black));
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -128,11 +128,11 @@ p {
     }
 
     h2 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 

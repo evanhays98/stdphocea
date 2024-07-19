@@ -2,13 +2,16 @@
 
 import React from 'react';
 import classes from "./Contact.module.css";
-import {FaMapMarkerAlt, FaTrain} from "react-icons/fa";
+import {FaMapMarkerAlt} from "react-icons/fa";
 import {FaPhoneFlip} from "react-icons/fa6";
 import {MdEmail} from "react-icons/md";
+import {Button} from "@/app/libs/core";
+import {useContent} from "@/app/libs/data/Content";
 
 
 export const Contact = () => {
 
+    const content = useContent();
 
     return (
         <div className={classes.container} id="contact">
@@ -21,24 +24,22 @@ export const Contact = () => {
                             <FaMapMarkerAlt className={classes.icon}/>
                             <div className={classes.separatorRight}/>
                             <a
-                               className={classes.info}>14 rue de Monfort, Maurepas, 78310</a>
+                                className={classes.info}>6 boulevard Curie, 13013 Marseille, France</a>
                         </div>
                         <div className={classes.infoContent}>
                             <FaPhoneFlip className={classes.icon}/>
                             <div className={classes.separatorRight}/>
-                            <a  className={classes.info}>01 30 62 23 24</a>
+                            <a className={classes.info}>+33 6 35 31 73 90</a>
                         </div>
                         <div className={classes.infoContent}>
                             <MdEmail className={classes.icon}/>
                             <div className={classes.separatorRight}/>
                             <a
-                               className={classes.info}>cab.oph.pariwest@gmail.com</a>
+                                className={classes.info}>gregoryfavatapro@gmail.com</a>
                         </div>
-                        <div className={classes.infoContent}>
-                            <FaTrain className={classes.icon}/>
-                            <div className={classes.separatorRight}/>
-                            <p className={classes.info}>15min à pied de la gare (La Verrière)</p>
-                        </div>
+                        <a href={content.buttonFormation.href}>
+                            <Button text={content.buttonFormation.title} white/>
+                        </a>
                     </div>
                 </div>
             </div>

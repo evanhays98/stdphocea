@@ -1,6 +1,6 @@
 .blockColor {
     color: rgb(var(--white));
-    background: rgb(var(--green-4));
+    background: rgb(var(--blue-4));
     min-width: 80px;
     border-radius: 16px;
     font-weight: 600;
@@ -20,7 +20,7 @@
 }
 
 .blockColor:hover {
-    background: rgba(var(--green-5), .98);
+    background: rgba(var(--blue-5), .98);
 }
 
 .full {
@@ -30,20 +30,20 @@
 .line {
     background: transparent;
     text-decoration: none;
-    color: rgb(var(--green-5));
+    color: rgb(var(--blue-5));
     border-bottom: 1px solid transparent;
 }
 
 .line:hover {
     background: transparent;
-    border-bottom: 1px solid rgb(var(--green-2));
+    border-bottom: 1px solid rgb(var(--blue-2));
 }
 
 .white {
-    background: rgb(var(--green-0), .8);
+    background: rgb(var(--blue-0), .8);
     color: rgb(var(--black));
 }
 
 .white:hover {
-    background: rgba(var(--green-0), .6);
+    background: rgba(var(--blue-0), .6);
 }

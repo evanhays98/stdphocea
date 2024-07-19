@@ -1,10 +1,10 @@
 .container {
     width: 100%;
-    background: rgb(var(--green-5));
+    background: rgb(var(--blue-5));
     margin: -32px auto 0;
     border-radius: 32px 32px 0 0;
-    box-shadow: 0 0 60px 16px rgba(var(--green-5), .25);
-    border-top: solid 1px rgba(var(--green-1), .8);
+    box-shadow: 0 0 60px 16px rgba(var(--blue-5), .25);
+    border-top: solid 1px rgba(var(--blue-1), .8);
     position: relative;
     padding-bottom: 24px;
 }
@@ -19,8 +19,9 @@
 }
 
 .title {
-    color: rgb(var(--green-1));
+    color: rgb(var(--blue-0));
     padding-bottom: 16px;
+    margin: 0 auto;
 }
 
 .box {
@@ -36,10 +37,10 @@
     width: 500px;
     padding: 8px;
     height: 500px;
-    background: rgba(var(--green-1), .9);
+    background: rgba(var(--blue-1), .9);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 4px 0 16px 4px rgba(var(--green-1), .2);
+    box-shadow: 4px 0 16px 4px rgba(var(--blue-1), .2);
 }
 
 .map {
@@ -67,13 +68,13 @@
 
 .info {
     font-family: 'Montserrat', sans-serif;
-    color: rgb(var(--green-1));
+    color: rgb(var(--blue-1));
     font-weight: 500;
 }
 
 .separatorRight {
     height: 32px;
-    border-right: solid 3px rgb(var(--green-2));
+    border-right: solid 3px rgb(var(--blue-2));
     padding-right: 8px;
     border-radius: 4px;
     margin-left: -16px;
@@ -81,7 +82,7 @@
 
 .icon {
     font-size: 24px;
-    color: rgb(var(--green-1));
+    color: rgb(var(--blue-1));
 }
 
 @media only screen and  (max-width: 1040px) {

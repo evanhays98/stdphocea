@@ -57,11 +57,10 @@ export const Header = () => {
             <div className={classes.container}>
                 <div className={classes.nameContainer}>
                     <div className={classes.logoContainer} onClick={() => goTo('home')}>
-                        <Image className={classes.logo} src="/logo.svg" alt="corp78" fill
+                        <Image className={classes.logo} src="/logoStudioPhocea.png" alt="logo" fill
                                sizes="(max-width: 64px) , (max-width: 64px)"/>
                     </div>
                 </div>
-                <div className={classes.separator}/>
                 <div className={classnames(classes.menuContainer, {
                     [classes.openMenu]: openMenu,
                     [classes.closeMenu]: !openMenu,
@@ -72,12 +71,14 @@ export const Header = () => {
                                 <Image className={classes.image} src="/IoClose.svg" alt="menu" width={40} height={40}/>
                             </div>
                         </div>
-                        <div className={classes.separator}/>
                         <DropDown title="Accueil" onClick={() => goTo('home')}></DropDown>
                         <div className={classes.separator}/>
-                        <DropDown title="Actualités" onClick={() => router.push("/actu")}/>
+                        <DropDown title="La formation" onClick={() => goTo('formation')}/>
                         <div className={classes.separator}/>
+                        <DropDown title="Programme" onClick={() => goTo('programme')}></DropDown>
+                        <div className={classes.separator}></div>
                         <DropDown title="Contact" onClick={() => goTo('contact')}></DropDown>
+
                     </div>
                 </div>
                 <div className={classes.separator}/>

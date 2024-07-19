@@ -17,10 +17,10 @@ export default nextConfig;*/
 
 const nextConfig = {
     basePath: '/stdphocea',
+    output: 'export',
     reactStrictMode: true,
     images: {
         unoptimized: true,
-        basePath: 'https://evanhays98.github.io/stdphocea',
     }
 }
 

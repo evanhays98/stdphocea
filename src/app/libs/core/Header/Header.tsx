@@ -31,11 +31,7 @@ export const Header = () => {
     }
 
     const goTo = (id: string) => {
-        if (tab !== "/") {
-            router.push(`/?tab=${id}`);
-        } else {
-            scrollTo(id);
-        }
+        scrollTo(id);
     };
 
     useEffect(() => {

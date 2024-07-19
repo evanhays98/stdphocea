@@ -13,7 +13,8 @@ const nextConfig = {
     }
 }
 
-export default nextConfig;*/
+export default nextConfig;
+*/
 
 const nextConfig = {
     basePath: '/stdphocea',

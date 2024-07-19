@@ -12,8 +12,8 @@ export const AdditionalInfo = () => {
 
     const contentList = useMemo(() => {
         const res: ReactNode[] = []
-        Object.values(content.keyIndicators.content).forEach((item) => {
-            const Element = <SimpleBoxContent title={item.title} white transparent>
+        Object.values(content.keyIndicators.content).forEach((item, index) => {
+            const Element = <SimpleBoxContent id={`contentList${index}`} title={item.title} white transparent>
                 {item.content.map((goal, index) => (
                     <li key={index} dangerouslySetInnerHTML={{__html: goal}}/>
                 ))}
@@ -26,8 +26,8 @@ export const AdditionalInfo = () => {
 
     const contentListAdditional = useMemo(() => {
         const res: ReactNode[] = []
-        Object.values(content.additional).forEach((item) => {
-            const Element = <SimpleBoxContent title={item.title} blueLight>
+        Object.values(content.additional).forEach((item, index) => {
+            const Element = <SimpleBoxContent id={`additional${index}`} title={item.title} blueLight>
                 {Array.isArray(item.content) ? item.content.map((goal, index) => (
                     <li key={index} dangerouslySetInnerHTML={{__html: goal}}/>
                 )) : <p>{item.content}</p>}</SimpleBoxContent>
@@ -41,7 +41,9 @@ export const AdditionalInfo = () => {
         <div className={classes.container} id="additional">
             <div className={classes.listContainer}>
                 {contentListAdditional.map((item, index) => (
-                    item
+                    <React.Fragment key={index}>
+                        {item}
+                    </React.Fragment>
                 ))}
                 <SimpleBoxContent title={content.support.title} blueLight>
                     {content.support.content.map((goal, index) => (

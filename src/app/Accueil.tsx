@@ -13,7 +13,7 @@ export const Acceuil = () => {
     return (
         <div className={classes.container} id="home">
             <div className={classes.imageContainer}>
-                <Image className={classes.image} src="/workers_online.png" alt="workers" fill/>
+                <Image className={classes.image} src="https://evanhays98.github.io/stdphocea/workers_online.png" alt="workers" fill/>
             </div>
             <div className={classes.titleContainer}>
                 <h1 className={classes.title}>Studio Phocea</h1>

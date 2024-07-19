@@ -18,7 +18,7 @@ export const Module = ({title, id, children, image}: Props) => {
             <h3 className={classes.title}>{title}</h3>
             <div className={classes.container}>
                 {image && <div className={classes.imageContainer}>
-                    <Image className={classes.image} src="/workers_plan.png" alt="workers" fill/>
+                    <Image className={classes.image} src="https://evanhays98.github.io/stdphocea/workers_plan.png" alt="workers" fill/>
                 </div>}
                 <div className={classes.listContainer}>
                     {children}

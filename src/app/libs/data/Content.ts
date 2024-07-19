@@ -295,7 +295,8 @@ const content = {
     buttonFormation: {
         title: "S'inscrire à la Formation",
         href: "https://docs.google.com/forms/d/1_ywYbnVWLOFcvtBIArgCi5EKxHGe5R0icZOfEAliPtg/prefill"
-    }
+    },
+    basePath: "https://evanhays98.github.io/stdphocea"
 }
 
 export const useContent = () => {

@@ -57,7 +57,7 @@ export const Header = () => {
             <div className={classes.container}>
                 <div className={classes.nameContainer}>
                     <div className={classes.logoContainer} onClick={() => goTo('home')}>
-                        <Image className={classes.logo} src="/logoStudioPhocea.png" alt="logo" fill
+                        <Image className={classes.logo} src="https://evanhays98.github.io/stdphocea/logoStudioPhocea.png" alt="logo" fill
                                sizes="(max-width: 64px) , (max-width: 64px)"/>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export const Header = () => {
                     <div className={classes.dropDownContainer}>
                         <div className={classes.closeMenuButtonContainer}>
                             <div className={classes.menuButton} onClick={closeOrOpenMenu}>
-                                <Image className={classes.image} src="/IoClose.svg" alt="menu" width={40} height={40}/>
+                                <Image className={classes.image} src="https://evanhays98.github.io/stdphocea/IoClose.svg" alt="menu" width={40} height={40}/>
                             </div>
                         </div>
                         <DropDown title="Accueil" onClick={() => goTo('home')}></DropDown>
@@ -83,7 +83,7 @@ export const Header = () => {
                 </div>
                 <div className={classes.separator}/>
                 <div className={classes.menuButton} onClick={closeOrOpenMenu}>
-                    <Image className={classes.image} src="/IoMenu.svg" alt="menu" width={40} height={40}/>
+                    <Image className={classes.image} src="https://evanhays98.github.io/stdphocea/IoMenu.svg" alt="menu" width={40} height={40}/>
                 </div>
             </div>
         </div>

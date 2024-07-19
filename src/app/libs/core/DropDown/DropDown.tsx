@@ -28,10 +28,10 @@ export const DropDown = ({title, linksDropDown, onClick}: Props) => {
             <div className={classes.titleContainer}>
                 <p className={classes.mainTitle}>{title}</p>
                 {linksDropDown &&
-                    <Image className={classnames(classes.dropDownIcon, classes.dropDownBlack)} src='./Expand_down.svg'
+                    <Image className={classnames(classes.dropDownIcon, classes.dropDownBlack)} src='https://evanhays98.github.io/stdphocea/Expand_down.svg'
                            alt="arrow" width="24" height="24"></Image>}
                 {linksDropDown && <Image className={classnames(classes.dropDownIcon, classes.dropDownWhite)}
-                                         src='./Expand_down_white.svg' alt="arrow" width="24" height="24"></Image>}
+                                         src='https://evanhays98.github.io/stdphocea/Expand_down_white.svg' alt="arrow" width="24" height="24"></Image>}
             </div>
 
             {linksDropDown &&

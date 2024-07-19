@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    max-width: 1900px;
     background: rgb(var(--blue-0));
     position: relative;
     padding-bottom: 48px;
@@ -13,7 +12,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 1000px;
     gap: 16px;
     margin: 0 auto;
     padding: 32px 32px 64px;
@@ -24,9 +22,11 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    max-width: 1900px;
     align-items: normal;
     gap: 24px;
     padding: 48px 0;
+    margin: 0 auto;
 }
 
 .customP {

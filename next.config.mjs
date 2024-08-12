@@ -4,14 +4,15 @@
 
 
 
-/*const nextConfig = {
+const nextConfig = {
     output: 'export',
     reactStrictMode: true,
     images: {
         unoptimized: true,
     }
-}*/
+}
 
+/*
 const nextConfig = {
     basePath: '/stdphocea',
     output: 'export',
@@ -20,6 +21,7 @@ const nextConfig = {
         unoptimized: true,
     }
 }
+*/
 
 export default nextConfig;
 
